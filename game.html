@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>The Game of Maths</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="game.css">
+        <script src="game.js"></script>
+    </head>
+    <body>
+        <h4 id="player_name1"></h4> <span id="player1_score"></span>
+        <br>
+        <h4 id="player_name2"></h4> <span id="player2_score"></span>
+        <div class="container">
+            <center>
+                <h1 class="btn btn-primary heading" style="color: white;">Math Game</h1>
+                <h4 id="questioner">Questioner - </h4>
+                <h4 id="answerer">Answerer - </h4>
+                <br><br>
+                <div id="output" class="btn btn-warning">
+                    <p  id="question"></p>
+                    <div class="row">
+                        <p>Answer :</p>
+                        <input type="text" id="input_check_box">
+                    </div>
+                    <button class="btn btn-danger" onclick="check()">Check</button> 
+                </div>
+                <p>Number 1</p>
+                <input type="text" placeholder="number 1"  id="number_1">
+                <br><br>
+                <p>Number 2</p>
+                <input type="text" placeholder="number 2"  id="number_2">
+            </center>
+            <button class="btn btn-warning" onclick="send()" id="send_button">Send</button>
+        </div>
+    </body>
+</html>
